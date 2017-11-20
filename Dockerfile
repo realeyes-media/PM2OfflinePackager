@@ -28,4 +28,4 @@ VOLUME [ "/mnt/createdpackages" ]
 
 ADD scripts/bundleup.sh /tmp/
 
-ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT [ "/tmp/bundleup.sh" ]
