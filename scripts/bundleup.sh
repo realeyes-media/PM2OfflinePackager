@@ -5,3 +5,6 @@
 cd /mnt/createdpackages
 npm bundle --verbose pm2
 ls .
+
+# Keep the container running
+exec "$@"
