@@ -27,6 +27,7 @@ RUN mkdir -p /mnt/createdpackages
 VOLUME [ "/mnt/createdpackages" ]
 
 COPY ./scripts/bundleup.sh /tmp/
+RUN chmod +x /tmp/bundleup.sh
 
 ENTRYPOINT ["/bin/bash"]
 
