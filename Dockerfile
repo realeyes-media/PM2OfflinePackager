@@ -26,8 +26,8 @@ RUN npm install npm-bundle -g
 RUN mkdir -p /mnt/createdpackages
 VOLUME [ "/mnt/createdpackages" ]
 
-COPY ./scripts/bundleup.sh /tmp/
-RUN chmod +x /tmp/bundleup.sh
+COPY ./scripts/bundleup.sh /src/
+RUN mv /src/bundleup.sh /tmp && chmod +x /tmp/bundleup.sh
 
 ENTRYPOINT ["/bin/bash"]
 
