@@ -28,5 +28,5 @@ VOLUME [ "/mnt/createdpackages" ]
 
 COPY scripts/bundleup.sh /tmp/
 
-ENTRYPOINT [ "/tmp/bundleup.sh" ]
-CMD ["/usr/sbin/sshd", "-D"]
+ENTRYPOINT ["/bin/ping", "-c", "3"]
+CMD ["/tmp/bundleup.sh"]
