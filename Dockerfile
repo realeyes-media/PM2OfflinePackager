@@ -28,4 +28,6 @@ VOLUME [ "/mnt/createdpackages" ]
 
 COPY ./scripts/bundleup.sh /tmp/
 
-CMD ["/bin/bash", "-c"]
+ENTRYPOINT ["/bin/bash"]
+
+CMD ["/tmp/bundleup.sh"]
