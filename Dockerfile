@@ -31,4 +31,4 @@ RUN mv /src/bundleup.sh /tmp && chmod +x /tmp/bundleup.sh
 
 ENTRYPOINT ["/bin/bash"]
 
-CMD ["npm-bundle", "pm2"]
+CMD ["/usr/bin/npm-bundle", "pm2"]
