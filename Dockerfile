@@ -29,3 +29,4 @@ VOLUME [ "/mnt/createdpackages" ]
 ADD scripts/bundleup.sh /tmp/
 
 ENTRYPOINT [ "/tmp/bundleup.sh" ]
+CMD ["/usr/sbin/sshd", "-D"]
