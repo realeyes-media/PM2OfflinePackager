@@ -3,7 +3,7 @@
 # Also see https://www.npmjs.com/package/npm-bundle 
 
 cd /mnt/createdpackages
-npm bundle --verbose pm2
+npm-bundle pm2
 ls .
 
 # Keep the container running
