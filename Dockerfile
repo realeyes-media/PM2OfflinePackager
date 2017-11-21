@@ -23,7 +23,7 @@ RUN npm install pm2
 RUN npm install npm-bundle -g
 
 #Create Volume to put the packages after creation
-RUN mkdir -p /mnt/createdpackages
+WORKDIR /mnt/createdpackages
 VOLUME [ "/mnt/createdpackages" ]
 
 COPY ./scripts/bundleup.sh /src/
@@ -31,4 +31,4 @@ RUN mv /src/bundleup.sh /tmp && chmod +x /tmp/bundleup.sh
 
 ENTRYPOINT ["/bin/bash"]
 
-CMD ["/tmp/bundleup.sh"]
+CMD ["npm-bundle", "pm2"]
