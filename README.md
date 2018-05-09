@@ -1,3 +1,5 @@
+[![Docker Repository on Quay](https://quay.io/repository/realeyes/pm2offlinepackager/status "Docker Repository on Quay")](https://quay.io/repository/realeyes/pm2offlinepackager)
+
 # PM2OfflinePackager
 A Docker Container to package up PM2 from the public registry for offline install
 
